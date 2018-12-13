@@ -67,16 +67,6 @@ class SeriesType extends AbstractType
                       'attr' => array('class' => 'series materialtags',
                                       'aria-label' => $this->translator->trans('Keywords', array(), null, $this->locale), ),
                       'label' => $this->translator->trans('Keywords', array(), null, $this->locale), ))
-            ->add('copyright', TextType::class,
-                  array(
-                      'required' => false,
-                      'attr' => array('aria-label' => $this->translator->trans('Copyright', array(), null, $this->locale)),
-                      'label' => $this->translator->trans('Copyright', array(), null, $this->locale), ))
-            ->add('license', LicenseType::class,
-                  array(
-                      'required' => false,
-                      'attr' => array('aria-label' => $this->translator->trans('License', array(), null, $this->locale)),
-                      'label' => $this->translator->trans('License', array(), null, $this->locale), ))
             ->add('series_type', null,
                   array(
                       'required' => false,
