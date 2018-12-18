@@ -96,7 +96,7 @@ class Configuration implements ConfigurationInterface
               ->end()
             ->end()
             ->scalarNode('event_default_poster')
-              ->defaultValue('/bundles/pumukitwebtv/images/live_screen.jpg')
+              ->defaultValue('/bundles/pumukitwebtv/images/countdown.jpg')
               ->info('Event default poster image path')
             ->end()
           ->end()

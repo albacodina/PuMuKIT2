@@ -12,6 +12,93 @@
 
 {% block body_without_bar %}
 
+    <style>
+        @media (max-width: 425px) {
+            .warning {
+                top:30% !important;
+            }
+
+            .countdown {
+                font-size: 25px;
+                float: left;
+                top:0px;
+            }
+
+            .countdown.days {
+                margin-left: 19%;
+            }
+
+            .countdown.hours {
+                margin-left: 11%;
+            }
+
+            .countdown.minutes {
+                margin-left: 11%;
+            }
+
+            .countdown.seconds {
+                margin-left: 12%;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .warning {
+                top:27% !important;
+            }
+
+            .countdown {
+                font-size: 25px;
+                float: left;
+                top:0px;
+            }
+
+            .countdown.days {
+                margin-left: 19%;
+            }
+
+            .countdown.hours {
+                margin-left: 11%;
+            }
+
+            .countdown.minutes {
+                margin-left: 11%;
+            }
+
+            .countdown.seconds {
+                margin-left: 12%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .warning {
+                top:23% !important;
+            }
+
+            .countdown {
+                font-size: 25px;
+                float: left;
+                top:0px;
+            }
+
+            .countdown.days {
+                margin-left: 18%;
+            }
+
+            .countdown.hours {
+                margin-left: 10%;
+            }
+
+            .countdown.minutes {
+                margin-left: 9%;
+            }
+
+            .countdown.seconds {
+                margin-left: 10%;
+            }
+        }
+
+
+    </style>
     {% set event = multimediaObject.getEmbeddedEvent() %}
     <div class="col-xs-12">
         <h1 class="titulo_widget">
